@@ -71,6 +71,7 @@
     <link href="css/navigation.css" rel="stylesheet">
     <link href="css/line-awesome.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/jlplayer.css" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="90">
@@ -859,11 +860,13 @@ z-index:1000;" target="_blank">
     <!-- Modal content-->
     <div id="myModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
-            <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-body container">
-                    <iframe src="https://player.vimeo.com/video/676960350?h=40da95d44e" width="640" height="740"
-                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                    <form class="video-container" method="GET">
+                        <video preload="none" class="jlplayer-video">
+                            <source src="video/credito rural.mp4" type="video/mp4">
+                        </video>
+                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
@@ -902,6 +905,7 @@ z-index:1000;" target="_blank">
     <!-- CUSTOM JS -->
     <script src="vendor/js/contact_us.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/jlplayer.js" async></script>
 </body>
 
 </html>

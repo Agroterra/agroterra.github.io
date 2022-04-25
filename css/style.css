@@ -16,6 +16,16 @@
 .main-font{font-family: 'Raleway', sans-serif;}
 .alt-font{font-family: 'Open Sans', sans-serif;}
 
+.layer-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    min-height: 860px;
+}
+
 /* ===================================
     Scrollbar
 ====================================== */
@@ -219,6 +229,7 @@ section{padding: 7.5rem 0;}
 .bg-blue {background: #33c9dd;}
 .bg-black {background: #000000;}
 .bg-gray {background: #f6f6f6;}
+.bg-green2 {background: #9AB92D;}
 .bg-transparent {background: transparent;}
 
 .margin-top {margin-top: 30px;}
@@ -993,7 +1004,7 @@ section{padding: 7.5rem 0;}
 }
 
 .slider-heading {
-    font-size: 34px;
+    font-size: 30px;
 }
 
 .slider-paragraph {
@@ -1464,11 +1475,16 @@ figure.snip0015:hover figcaption::before {
     padding: 20px 0 0 0;
     border-radius: 5px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 .counter_plus{
     font-size: 24px;
     font-weight: 900;
-    color: #81a109 ;
+    color: #81a109;
+    margin: 0;
 }
 .count-title {
     font-size: 34px;
@@ -1476,7 +1492,6 @@ figure.snip0015:hover figcaption::before {
     color: rgba(255, 255, 255, 0);
     font-weight: bold;
     line-height: 1.333;
-    margin-top: 10px;
     margin-bottom: 0;
     text-align: center;
     background: -webkit-linear-gradient( 170deg,#81a109 20%, #81a109 100%);
@@ -1494,7 +1509,6 @@ figure.snip0015:hover figcaption::before {
     color: rgba(255, 255, 255, 0);
     font-weight: bold;
     line-height: 1.333;
-    margin-top: 10px;
     margin-bottom: 0;
     text-align: center;
     background: -webkit-linear-gradient( 170deg,#33c9dd 20%, #33c9dd 100%);
@@ -1943,12 +1957,16 @@ figure.snip0015:hover figcaption::before {
 .page-breadcrumb li a:hover{
     color:#212331;
 }
+.modal-dialog{
+    max-width: 1250px!important;
 
+}
 /* ===================================
     MEDIA QUERIES
 =================================== */
 
 @media screen and (max-width:1359px) {
+
     .snip1577 figcaption {
         left: 65px;
         bottom: 70px;
@@ -1972,6 +1990,7 @@ figure.snip0015:hover figcaption::before {
 }
 
 @media screen and (max-width:991px){
+
     .sidemenu_btn {
         display: flex;
         flex-direction: row;
